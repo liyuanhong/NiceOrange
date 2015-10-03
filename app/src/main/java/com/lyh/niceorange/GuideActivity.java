@@ -1,11 +1,10 @@
 package com.lyh.niceorange;
 
 import android.os.Bundle;
-import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.lyh.adapter.OrAdapter;
 
@@ -29,9 +28,15 @@ public class GuideActivity extends AppCompatActivity {
         pager = (ViewPager) findViewById(R.id.guidePager);
         pager1 = this.getLayoutInflater().inflate(R.layout.guide_pager1,null);
         pager2 = this.getLayoutInflater().inflate(R.layout.guide_pager2,null);
-        pager3 = this.getLayoutInflater().inflate(R.layout.guide_pager3,null);
+        pager3 = this.getLayoutInflater().inflate(R.layout.guide_pager3, null);
+        ImageView pageTitle1 = (ImageView) pager1.findViewById(R.id.guide_pager1);
+        pageTitle1.setImageResource(R.mipmap.guide_page1);
 
-        ArrayList<View> views= new ArrayList<View>();
+        ImageView pageTitle2 = (ImageView) pager2.findViewById(R.id.guide_pager2);
+        pageTitle2.setImageResource(R.mipmap.guide_page2);
+
+
+        ArrayList<View> views= new ArrayList<>();
         views.add(pager1);
         views.add(pager2);
         views.add(pager3);

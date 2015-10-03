@@ -7,6 +7,6 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:text="pager3"
-        android:background="#bbbbbb"/>
+        android:background="#edb405"/>
 
 </LinearLayout>
